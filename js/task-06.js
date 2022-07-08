@@ -1,7 +1,8 @@
 const inputEl = document.querySelector("input");
-console.log(inputEl);
 const validEl = document.querySelector("#validation-input");
+
 inputEl.addEventListener("blur", onEventInputEl);
+
 function onEventInputEl(event) {
   const validInput = Number(event.currentTarget.dataset.length);
   const userInput = event.currentTarget.value.length;
